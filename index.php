@@ -19,9 +19,11 @@ if(!function_exists('add_action')){
 
 // includes
 include('includes/activate.php');
+include('includes/init.php');
 
 // hooks
 register_activation_hook(__FILE__, 'br_activate_plugin');
+add_action('init','br_receitas_init');
 
 
 // shortcodes
