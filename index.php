@@ -16,6 +16,12 @@ if(!function_exists('add_action')){
     exit;
 }
 // setup
+
 // includes
+include('includes/activate.php');
+
 // hooks
+register_activation_hook(__FILE__, 'br_activate_plugin');
+
+
 // shortcodes
